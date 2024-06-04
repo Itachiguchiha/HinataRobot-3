@@ -688,7 +688,6 @@ def main():
     )
 
     NEKO_PTB.add_handler(start_handler)
-    NEKO_PTB.add_handler(help_handler)
     NEKO_PTB.add_handler(data_callback_handler)
     NEKO_PTB.add_handler(settings_handler)
     NEKO_PTB.add_handler(help_callback_handler)
@@ -737,5 +736,4 @@ except BaseException:
 if __name__ == "__main__":
     tbot.start(bot_token=TOKEN)
     pgram.start()
-    main()
     idle()
