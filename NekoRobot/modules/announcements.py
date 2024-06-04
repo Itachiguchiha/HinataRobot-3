@@ -8,7 +8,6 @@ from telegram.ext.chatmemberhandler import ChatMemberHandler
 
 import NekoRobot.modules.sql.logger_sql as sql
 from NekoRobot import NEKO_PTB
-from NekoRobot.modules.log_channel import loggable
 
 # Module to extract and log (optional: send to chat) status changes in chat members using ChatMemberUpdated
 # https://github.com/python-telegram-bot/python-telegram-bot/blob/master/examples/chatmemberbot.py
