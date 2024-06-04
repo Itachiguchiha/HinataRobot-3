@@ -41,7 +41,6 @@ from NekoRobot.modules.helper_funcs.chat_status import (
 )
 
 from NekoRobot.modules.helper_funcs.string_handling import extract_time
-from NekoRobot.modules.log_channel import loggable
 
 
 def check_user(user_id: int, bot: Bot, chat: Chat) -> Optional[str]:
