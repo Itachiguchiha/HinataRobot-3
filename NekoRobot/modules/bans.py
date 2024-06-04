@@ -21,7 +21,6 @@ from NekoRobot import (
     TIGERS,
     WOLVES,
 )
-from NekoRobot.modules.disable import DisableAbleCommandHandler
 from NekoRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     can_delete,
