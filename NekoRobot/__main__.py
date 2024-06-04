@@ -112,15 +112,15 @@ HELP_MSG = "Click The Button Below To Get Help Menu In Your Dm."
 START_MSG = "I'm Awake Already!\n<b>Haven't Slept Since:</b> <code>{}</code>"
 
 NEKO_STICKERS = (
-    "CAACAgUAAxkBAAIIW2NL5v9F9hUom4xmsgNYb63SEfZZAAIZBgACYAF5VIerYoMcSln8KgQ",
-    "CAACAgUAAxkBAAIIT2NL5tVmdAO3n1o3cp9Jic9LkqJvAAK7AgACoU3RVLpdwYfQPmS9KgQ",
-    "CAACAgUAAxkBAAIIUGNL5tVNd0rwdoMv-uDVcZ3hHgwlAAIwAwACP9jQVMv2AfU-DvBfKgQ",
-    "CAACAgUAAxkBAAIIUmNL5tUzCtvS5E-XR8h3tFMSqVu7AAIGAwACNZnYVOTUhlBiHTQGKgQ",
-    "CAACAgUAAxkBAAIIUWNL5tVBEQAB2gWLSq0ymEPeAj5kmQAC3QEAAuu92VSPj3UkCiNvfioE",
+"CAACAgUAAxkBAAEEWUFmXqGzbdR6GqE6sVpIc9ODHcbd_AAC3w0AAluv-VbwTKUJq7uL_DUE",
+"CAACAgUAAxkBAAEEWUBmXqGyyhruF85waAvo-VMxVfabAwACEBAAAtlU8Faqv_wftmx1dTUE",
+"CAACAgUAAxkBAAEEWT9mXqGyRM4zF6ThgRcf6AoJqASOywACHhAAAo8y-VYISG6vLTDidDUE",
+"CAACAgUAAxkBAAEEWT5mXqGx9GC6wXfV63WJbJbEEVo2hQACcwwAAodl-VY8YohItCW-yjUE",
+"CAACAgUAAxkBAAEEWT1mXqGxuI3rjSg28SF4NuePAn85BwACVhAAAvE18VY4OU_g9CeE0jUE",
 )
 
 PM_START_TEXT = """
-────「 [{}](https://telegra.ph/file/9996ec2eafdef4692102d.jpg) 」────
+────「 [{}](https://graph.org/file/9d42fd14f44ec42dfbf00.jpg) 」────
 *Hola! {},*
 *㋡ ʜɪ, ɪ'ᴍ ʜɪɴᴀᴛᴀ ! ᴛʜᴇ ʙᴏᴛ ᴛʜᴀᴛ's ғᴀsᴛᴇʀ ᴛʜᴀɴ ᴀ sᴘᴇᴇᴅɪɴɢ ʙᴜʟʟᴇᴛ ᴀɴᴅ sᴍᴏᴏᴛʜᴇʀ ᴛʜᴀɴ Jᴀᴢᴢ.!*
 *‣ ɪ ʜᴀᴠᴇ ᴍᴀɴʏ ғᴇᴀᴛᴜʀᴇs ᴍᴜsɪᴄ? ɴᴏ ᴘʀᴏʙʟᴇᴍ. ᴍᴀɴᴀɢᴇᴍᴇɴᴛ? ᴘɪᴇᴄᴇ ᴏғ ᴄᴀᴋᴇ. ʟᴀɢ? ɴᴏᴛ ᴏɴ ᴍʏ ᴡᴀᴛᴄʜ.!*
@@ -134,22 +134,20 @@ PM_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(
-            text=f"Add {BOT_NAME} To Your Group",
+            text=f"🪭ᴀᴅᴅ {BOT_NAME} ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ🪭",
             url=f"https://telegram.dog/{BOT_USERNAME}?startgroup=true",
         )
     ],
     [
-        InlineKeyboardButton(text="📓 Guidelines", callback_data="help_back"),
         InlineKeyboardButton(
-            text="Source 🌐", url="https://github.com/Awesome-Prince/NekoRobot-3.git"
-        ),
+           text="👾ʜᴇʟᴘ ᴄᴏᴍᴍᴀɴᴅs👾", callback_data="help_back"),
     ],
     [
         InlineKeyboardButton(
-            text="🚑 Support", url=f"https://telegram.dog/{SUPPORT_CHAT}"
+            text="🍂sᴜᴘᴘᴏʀᴛ🍂", url=f"https://telegram.dog/{SUPPORT_CHAT}"
         ),
         InlineKeyboardButton(
-            text="📢 Updates", url="https://telegram.dog/Programmer_Updates"
+            text="⛱️ᴜᴘᴅᴀᴛᴇs⛱️", url="https://telegram.dog/Programmer_Updates"
         ),
     ],
 ]
@@ -263,7 +261,7 @@ def start(update: Update, context: CallbackContext):
                         [
                             [
                                 InlineKeyboardButton(
-                                    text="[► Back ◄]", callback_data="help_back"
+                                    text="ʙᴀᴄᴋ", callback_data="help_back"
                                 )
                             ]
                         ]
@@ -303,17 +301,17 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_photo(
             random.choice(GROUP_START_IMG),
-            caption=f"<b>Yes, Master I'm alive!\nHaven't sleep since</b>: <code>{uptime}</code>",
+            caption=f"<b>ʏᴇs, ᴍᴀsᴛᴇʀ ɪ'ᴍ ᴀʟɪᴠᴇ!\nʜᴀᴠᴇɴ'ᴛ sʟᴇᴇᴘ sɪɴᴄᴇ</b>: <code>{uptime}</code>",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="🚑 Support",
+                            text="sᴜᴘᴘᴏʀᴛ",
                             url=f"https://telegram.dog/{SUPPORT_CHAT}",
                         ),
                         InlineKeyboardButton(
-                            text="📢 Updates",
+                            text="ᴜᴘᴅᴀᴛᴇs",
                             url="https://telegram.dog/Programmer_Updates",
                         ),
                     ]
@@ -387,10 +385,10 @@ def help_button(update: Update, context: CallbackContext) -> None:
                     [
                         [
                             InlineKeyboardButton(
-                                text="[► Back ◄]", callback_data="help_back"
+                                text="ʙᴀᴄᴋ", callback_data="help_back"
                             ),
                             InlineKeyboardButton(
-                                text="[► Support ◄]", url=f"https://t.me/{SUPPORT_CHAT}"
+                                text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
                             ),
                         ]
                     ]
@@ -440,7 +438,7 @@ def neko_callback_data(update: Update, context: CallbackContext) -> None:
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="[► Back ◄]", callback_data="neko_back")]]
+                [[InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="neko_back")]]
             ),
         )
     elif query.data == "neko_back":
@@ -473,7 +471,7 @@ def get_help(update: Update, context: CallbackContext) -> None:
                 [
                     [
                         InlineKeyboardButton(
-                            text="Open In Private Chat",
+                            text="ᴏᴘᴇɴ ɪɴ ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ",
                             url=f"t.me/{NEKO_PTB.bot.username}?start=help",
                         )
                     ]
@@ -491,7 +489,7 @@ def get_help(update: Update, context: CallbackContext) -> None:
             chat.id,
             text,
             InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="[► Back ◄]", callback_data="help_back")]]
+                [[InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="help_back")]]
             ),
         )
 
@@ -564,7 +562,7 @@ def settings_button(update: Update, context: CallbackContext) -> None:
             except AttributeError:
                 keyboard = []
             kbrd = InlineKeyboardMarkup(
-                InlineKeyboardButton(text="Back", callback_data=f"stngs_back({chat_id}")
+                InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data=f"stngs_back({chat_id}")
             )
             keyboard.append(kbrd)
             query.message.edit_text(
@@ -677,11 +675,11 @@ def donate(update: Update, context: CallbackContext) -> None:
                     [
                         [
                             InlineKeyboardButton(
-                                text="📢 Updates",
+                                text="ᴜᴘᴅᴀᴛᴇs",
                                 url="https://telegram.dog/Programmer_Updates",
                             ),
                             InlineKeyboardButton(
-                                text="🚑 Support",
+                                text="sᴜᴘᴘᴏʀᴛ",
                                 url=f"https://telegram.dog/{SUPPORT_CHAT}",
                             ),
                         ]
