@@ -56,8 +56,6 @@ from telegram.ext import (
     MessageHandler,
 )
 from telegram.utils.helpers import escape_markdown
-
-import NekoRobot.modules.sql.users_sql as sql
 from NekoRobot import (
     BOT_NAME,
     BOT_USERNAME,
