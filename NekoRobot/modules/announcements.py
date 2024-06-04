@@ -31,7 +31,6 @@ def do_announce(chat):  # announce to chat or only to log channel?
     return bool(chat.type != "chat" and sql.does_chat_log(chat.id))
 
 
-@loggable
 def chatmemberupdates(update: Update, context: CallbackContext) -> Optional[str]:
     bot = context.bot
     chat = update.effective_chat
