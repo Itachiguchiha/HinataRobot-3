@@ -67,7 +67,6 @@ def check_user(user_id: int, bot: Bot, chat: Chat) -> Optional[str]:
 @connection_status
 @bot_admin
 @user_admin
-@loggable
 def mute(update: Update, context: CallbackContext) -> str:
     bot = context.bot
     args = context.args
