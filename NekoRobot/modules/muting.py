@@ -39,10 +39,7 @@ from NekoRobot.modules.helper_funcs.chat_status import (
     is_user_admin,
     user_admin,
 )
-from NekoRobot.modules.helper_funcs.extraction import (
-    extract_user,
-    extract_user_and_text,
-)
+
 from NekoRobot.modules.helper_funcs.string_handling import extract_time
 from NekoRobot.modules.log_channel import loggable
 
