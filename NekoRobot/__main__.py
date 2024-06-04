@@ -76,8 +76,6 @@ from NekoRobot import (
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from NekoRobot.modules.helper_funcs.chat_status import is_user_admin
-from NekoRobot.modules.helper_funcs.misc import paginate_modules
 
 
 def get_readable_time(seconds: int) -> str:
