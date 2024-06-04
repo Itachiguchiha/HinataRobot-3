@@ -35,10 +35,6 @@ from telegram.ext.filters import BaseFilter
 
 from NekoRobot import LOGGER
 from NekoRobot import NEKO_PTB as d
-from NekoRobot.modules.disable import (
-    DisableAbleCommandHandler,
-    DisableAbleMessageHandler,
-)
 
 
 class NekoTelegramHandler:
